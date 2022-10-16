@@ -1,0 +1,8 @@
+#! /bin/sh
+for file in $*
+do
+    test -f "$file" || continue
+    ts=$(basename "$file" .jpg | sed -e 's/-//g' | rev | cut -c5- | rev )
+    echo $ts
+    touch -t $ts $file
+done
