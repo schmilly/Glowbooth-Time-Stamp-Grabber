@@ -2,7 +2,16 @@
 for file in $*
 do
     test -f "$file" || continue
-    ts=$(basename "$file" .jpg | sed -e 's/-//g' | rev | cut -c5- | rev )
+    if [[ $file == *.gif ]] ;
+    then
+      fileform=".gif"
+      cutter=3-
+    else
+      fileform=".jpg"
+      cutter=5-
+    fi 
+    ts=$(basename "$file" $fileform | sed -e 's/-//g' | rev | cut -b $cutter | rev )   
+    echo $file
     echo $ts
     touch -t $ts $file
 done
