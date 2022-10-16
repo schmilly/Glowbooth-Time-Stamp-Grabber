@@ -1,5 +1,6 @@
 # Glowbooth-Time-Stamp-Grabber
 
+## Introduction
 So you had a big night out partying at your ball/office-party/cult-end-of-year-event/whatever and that happens to have a photo booth. The next morning, with headache still pounding, you decide you want to download some photos from the rambunctious night! 
 
 But ALAS! A problem! The photos downloaded directly from the glowbooth website haven't been timestamped! There are time stamps in the photo title at least...
@@ -8,6 +9,7 @@ But no again! The traditonal time stamp bash scripts don't work because the glow
 
 To avoid this ever happening again I made this bash script
 
+## Running the script
 To run just download the script file, chmod to allow it to run (`chmod +rwx ./script`) type the name of the photos you want to change, or make it so bash can read it (i.e. * to read every file in directory)
 
 e.g.
