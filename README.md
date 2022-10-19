@@ -18,7 +18,6 @@ $ ./script *.jpg # Will change timestamp of every file ending with .jpg in curre
 ```
 
 Known issues:
-- Doesn't work with Glowbooth .gifs, could probably be an easy fix but I can't be fucked dealing with it tbh
 - Seconds aren't grabbed only does hours, minutes. Not sure you would want to tho ~ Photos only really take and upload every minute at their fastest. When I tried just cutting to seconds string to seconds (which is included in file name) but this was considred invalid by touch and I'm not sure I can be bothered finding a work around for a script I wrote in 5 minutes.
 - Majority of code was stolen from stack overflow answer [here](https://stackoverflow.com/questions/31351739/how-can-i-change-a-files-timestamp-from-the-file-name-in-linux)
 - Code won't run on Windows, maybe Mac but I will not harass some random mate to use their mac to test
